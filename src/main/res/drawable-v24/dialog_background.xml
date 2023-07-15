@@ -1,0 +1,11 @@
+<!-- dialog_background.xml -->
+<!-- 这是一个用于定义对话框背景的可绘制对象，它使用了渐变色和圆角效果 -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+    <gradient
+        android:startColor="#4F77E5"
+        android:endColor="#DDDDFB"
+        android:angle="45" />
+    <corners
+        android:radius="16dp" />
+</shape>

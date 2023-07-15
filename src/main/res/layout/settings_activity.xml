@@ -1,0 +1,138 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="fill_vertical"
+    android:orientation="vertical">
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_margin="10dp"
+        android:text="角色选择"
+        android:textSize="16dp"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="10dp">
+        <Spinner
+            android:id="@+id/id_role_spinner"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:entries="@array/options"
+            android:layout_weight="1"/>
+        <Button
+            android:id="@+id/id_delete_role"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="删除" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#999" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_margin="10dp"
+        android:text="语音选择"
+        android:textSize="16dp"
+        />
+
+    <Spinner
+        android:id="@+id/id_language_spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:entries="@array/language"
+        android:layout_margin="10dp"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#999" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="语音"/>
+    <RadioGroup
+        android:id="@+id/id_voice_switch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:orientation="horizontal">
+        <RadioButton
+            android:id="@+id/id_radio_play"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="开启语音"
+            android:checked="true"/>
+        <RadioButton
+            android:id="@+id/id_radio_off_play"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="关闭语音"/>
+    </RadioGroup>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="#2BB831" />
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="10dp"
+        android:lines="1"
+        android:text="自定义角色"
+        android:textSize="20dp" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="10dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="角色名称"/>
+        <EditText
+            android:id="@+id/id_role_name"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"/>
+    </LinearLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:layout_margin="10dp"
+        android:text="角色描述"/>
+    <EditText
+        android:id="@+id/id_role_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="" />
+    <Button
+        android:id="@+id/btu_save_role"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:text="保存"
+        />
+
+
+
+</LinearLayout>
